@@ -1,0 +1,39 @@
+// Required
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+//OVERRIDE
+//FONT FAMILY
+$font-family-sans-serif: 'Poppins', sans-serif;
+//FONT SIZE BASE
+// $font-size-base: 14px;
+
+// COLORES CUSTOM
+$custom-colors: (
+    //FUERZA
+    "fuerza-color": #333333,
+    //ENERGIA
+    "energia-color": #FFD81A,
+    //BLANCO
+    "blanco-color": #FFFFFF,
+    //GRIS 1
+    "gris1-color": #D6D6D6,
+    //GRIS 2
+    "gris2-color": #979797,
+    //GRIS 3
+    "gris3-color": #4D4D4D,
+    //SECUNDARIO
+    "secundario-color": #F0EB2D,
+);
+
+// AGREGAR COLORES CUSTOM
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+//CLASES
+
+.acordeonBoton {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
