@@ -2,10 +2,42 @@
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 //OVERRIDE
+
 //FONT FAMILY
 $font-family-sans-serif: 'Poppins', sans-serif;
+
 //FONT SIZE BASE
-// $font-size-base: 14px;
+$font-size-base: 14px;
+
+//FONT SIZE
+$h1-font-size:                "70px";
+$h2-font-size:                "40px";
+$h3-font-size:                "36px";
+$h4-font-size:                "32px";
+$h5-font-size:                "26px";
+$h6-font-size:                "24px";
+$h7-font-size:                "20px";
+$h8-font-size:                $font-size-base;
+
+$font-sizes: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size,
+  7: $h7-font-size,
+  8: $h8-font-size,
+);
+
+//FONT WEIGHT CUSTOM
+$font-weight-lighter:         lighter;
+$font-weight-light:           300;
+$font-weight-normal:          400;
+$font-weight-semibold:        500;
+$font-weight-bold:            600;
+$font-weight-bolder:          700;
+
 
 // COLORES CUSTOM
 $custom-colors: (
@@ -24,6 +56,8 @@ $custom-colors: (
     //SECUNDARIO
     "secundario-color": #F0EB2D,
 );
+
+
 
 // AGREGAR COLORES CUSTOM
 $theme-colors: map-merge($theme-colors, $custom-colors);
