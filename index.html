@@ -20,9 +20,9 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
+<body id="home" style="padding-top: 100px;">
     <!------------------------------ BARRA DE NAVEGACION ------------------------------>
-    <nav class="navbar navbar-expand-lg bg-fuerza-color px-3" id="home">
+    <nav class="navbar navbar-expand-lg bg-fuerza-color px-3 fixed-top">
         <div class="container-fluid">
 
             <a class="navbar-brand" href="#">
@@ -39,19 +39,19 @@
 
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link text-energia-color active fs-6" aria-current="page" href="#home">Inicio</a>
+                        <a class="nav-link link-primary active fs-6" aria-current="page" href="#home">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-energia-color fs-6" href="#que-hacemos">¿Qué hacemos?</a>
+                        <a class="nav-link link-primary fs-6" href="#que-hacemos">¿Qué hacemos?</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-energia-color fs-6" href="#planes">Planes</a>
+                        <a class="nav-link link-primary fs-6" href="#planes">Planes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-energia-color fs-6" href="#contacto">Contacto</a>
+                        <a class="nav-link link-primary fs-6" href="#contacto">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-energia-color fs-6" href="#faq">FAQ</a>
+                        <a class="nav-link link-primary fs-6" href="#faq">FAQ</a>
                     </li>
                 </ul>
 
@@ -59,10 +59,7 @@
                     <div class="d-flex align-items-center">
                         <a href="https://www.instagram.com/justfitok/" class="me-3">
                             <img src="img/navbar/instagram.svg" style="width: 44px;" alt="instagram">
-                            </a>
-                        <button type="button" class="btn btn-energia-color ms-2 d-none d-lg-block"><a
-                                class="text-decoration-none text-fuerza-color fs-7" href="#planes">Elegí tu
-                                cambio</a></button>
+                        </a>
                     </div>
                 </div>
 
@@ -82,6 +79,7 @@
                             El cambio comienza por vos.
                             ¿Cómo? Es simple.
                         </h5>
+                        <button class="btn btn-lg btn-fuerza-color boton-hover">Elegi tu cambio</button>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -138,7 +136,8 @@
             <div class="row my-4">
                 <div class="col-4 offset-4">
                     <img class="img-fluid" src="img/home/justfitFrase.png" alt="frase just fit">
-                    <p class="text-center text-gris3-color" style="font-size: clamp(14px,4vw,20px);">Alimentación + Entrenamiento</p>
+                    <p class="text-center text-gris3-color" style="font-size: clamp(14px,4vw,20px);">Alimentación +
+                        Entrenamiento</p>
                 </div>
             </div>
             <div class="row mb-5 py-3">
@@ -160,8 +159,7 @@
     </section>
 
     <!--------------------------------------------- SECCION QUE HACEMOS --------------------------------------------->
-    <section style="background: linear-gradient(180deg, rgba(255, 216, 26, 0.8) 0%, rgba(255, 255, 255, 0.16) 100%);"
-        id="que-hacemos">
+    <section style="background: linear-gradient(180deg, rgba(255, 216, 26, 0.8) 0%, rgba(255, 255, 255, 0.16) 100%);">
         <!---------------- IMAGENES ---------------->
         <div class="container">
             <div class="row py-3">
@@ -173,9 +171,10 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row" id="que-hacemos" style="padding-top: 70px;">
                 <div class="col-12 col-md-6 offset-md-3">
-                    <h3 class="text-center fw-light p-4" style="text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); font-size: clamp(36px, 5vw, 70px);">QUE
+                    <h3 class="text-center fw-light p-4"
+                        style="text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); font-size: clamp(36px, 5vw, 70px);">QUE
                         HACEMOS</h3>
                 </div>
             </div>
@@ -219,7 +218,8 @@
 
             <div class="row">
                 <div class="col-12 col-md-6 offset-md-3">
-                    <h3 class="text-center fw-light py-3" style="text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);  font-size: clamp(36px, 5vw, 70px);">
+                    <h3 class="text-center fw-light py-3"
+                        style="text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);  font-size: clamp(36px, 5vw, 70px);">
                         COMO LO HACEMOS</h3>
                 </div>
             </div>
@@ -285,7 +285,7 @@
                             Registrate y solicitá
                             tu primer consulta gratis
                         </h4>
-                        <button class="btn btn-lg btn-fuerza-color fs-7">REGISTRARSE</button>
+                        <button class="btn btn-lg btn-violeta-color fs-7 boton-hover">REGISTRARSE</button>
                     </div>
                 </div>
             </div>
@@ -294,7 +294,7 @@
     </section>
 
     <!--------------------------------------------- SECCION PLANES --------------------------------------------->
-    <section id="planes">
+    <section id="planes" style="padding-top: 70px;">
         <div class="container">
 
             <div class="row my-5">
@@ -303,10 +303,12 @@
                 border-radius: 12px;">
                     <div class="row gy-3">
                         <div class="col-6 offset-3">
-                            <h4 class="text-center fw-light" style="font-size: clamp(40px, 5vw, 70px);">ELEGI TU PLAN</h4>
+                            <h4 class="text-center fw-light" style="font-size: clamp(40px, 5vw, 70px);">ELEGI TU PLAN
+                            </h4>
                         </div>
                         <div class="col-6 offset-3">
-                            <h5 class="text-center fw-bold" style="font-size: clamp(24px, 5vw, 36px);">TODOS LOS PLANES INCLUYEN</h5>
+                            <h5 class="text-center fw-bold" style="font-size: clamp(24px, 5vw, 36px);">TODOS LOS PLANES
+                                INCLUYEN</h5>
                         </div>
                         <div class="col-8 offset-2">
                             <p class="text-center fs-6">
@@ -321,30 +323,41 @@
                         </div>
                         <!-------------------------- IMAGENES DE PLANES -------------------------->
                         <div class="col-4">
-                            <article class="d-flex flex-column align-items-center">
+                            <article class="d-flex flex-column align-items-center position-relative">
                                 <img class="img-fluid mb-2" src="img/planes/cardplan1.png" alt="plan 1">
-                                <button class="btn btn-fuerza-color">REALIZAR COMPRA</button>
+                                <p class="position-absolute top-50 start-50 translate-middle text-blanco-color text-center m-0 w-100"
+                                    style="font-size: clamp(14px,2.5vw,36px);">
+                                    1 mes<br>
+                                    +<br>
+                                    Consulta inicial
+                                </p>
+                                <!-- <p class="position-absolute top-50 start-50 translate-middle text-energia-color" style="font-size: clamp(14px,15vw,230px); text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">1</p> -->
+                                <button class="btn btn-fuerza-color boton-hover">REALIZAR COMPRA</button>
                             </article>
                         </div>
                         <div class="col-4">
-                            <article class="d-flex flex-column align-items-center">
+                            <article class="d-flex flex-column align-items-center position-relative">
                                 <img class="img-fluid mb-2" src="img/planes/cardplan2.png" alt="plan 1">
-                                <button class="btn btn-fuerza-color">REALIZAR COMPRA</button>
+                                <p class="position-absolute top-50 start-50 translate-middle text-blanco-color text-center m-0 w-100"
+                                    style="font-size: clamp(14px,2.5vw,36px);">
+                                    3 meses<br>
+                                    +<br>
+                                    Consulta inicial
+                                </p>
+                                <button class="btn btn-fuerza-color boton-hover">REALIZAR COMPRA</button>
                             </article>
                         </div>
                         <div class="col-4">
-                            <article class="d-flex flex-column align-items-center">
+                            <article class="d-flex flex-column align-items-center position-relative">
                                 <img class="img-fluid mb-2" src="img/planes/cardplan3.png" alt="plan 1">
-                                <button class="btn btn-fuerza-color">REALIZAR COMPRA</button>
+                                <p class="position-absolute top-50 start-50 translate-middle text-blanco-color text-center m-0 w-100"
+                                    style="font-size: clamp(14px,2.5vw,36px);">
+                                    3 meses<br>
+                                    +<br>
+                                    Consulta inicial
+                                </p>
+                                <button class="btn btn-fuerza-color boton-hover">REALIZAR COMPRA</button>
                             </article>
-                        </div>
-                        <div class="col-4 offset-4">
-                            <div class="d-flex justify-content-center">
-                                <button class="btn btn-fuerza-color">
-                                    SOLICITA TU PRIMER CONSULTA <br>
-                                    <span class="fw-bold fs-4">GRATIS</span>
-                                </button>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -356,12 +369,14 @@
     <section style="background: linear-gradient(360deg, rgba(255, 216, 26, 0.8) 0%, rgba(255, 255, 255, 0.16) 100%);">
 
         <!--------------------------------------------- SECCION FAQ --------------------------------------------->
-        <section style="background: url(img/fondos/fondoContactoFAQ.png); background-size: contain;" id="faq">
+        <section style="background: url(img/fondos/fondoContactoFAQ.png); background-size: contain; padding-top: 100px;"
+            id="faq">
             <div class="container">
                 <div class="row gy-3">
 
                     <div class="col-12 col-md-2 offset-md-5">
-                        <h3 class="text-center fw-light" style="text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); font-size: clamp(36px, 5vw, 70px);">FAQ
+                        <h3 class="text-center fw-light"
+                            style="text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); font-size: clamp(36px, 5vw, 70px);">FAQ
                         </h3>
                     </div>
 
@@ -377,13 +392,13 @@
 
                             <div class="accordion-item mb-4 acordeonBoton">
                                 <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button fs-6" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <button class="accordion-button fs-6 collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                         ¿Qué es JustFit?
                                     </button>
                                 </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show"
-                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample">
                                     <div class="accordion-body fs-7">
                                         En JustFit brindamos soluciones para las personas que realizan deportes o algún
                                         tipo
@@ -604,7 +619,7 @@
         </section>
 
         <!-- SECCION CONTACTO -->
-        <section id="contacto">
+        <section id="contacto" style="padding-top: 100px;">
             <div class="container">
 
                 <div class="row">
@@ -635,7 +650,8 @@
                                 <label for="mensaje" class="form-label">Tu Mensaje</label>
                                 <textarea class="form-control" id="mensaje" rows="8"></textarea>
                             </div>
-                            <button type="submit" class="btn btn-lg btn-fuerza-color align-self-end">ENVIAR</button>
+                            <button type="submit"
+                                class="btn btn-lg btn-fuerza-color align-self-end boton-hover">ENVIAR</button>
                         </form>
                     </div>
                 </div>
@@ -652,9 +668,14 @@
                             <img class="img-fluid py-5" src="img/footer/justfit.png" alt="justfit">
                         </div>
                     </div>
+                    <div class="col-12 col-sm-4 d-flex align-items-center justify-content-center">
+                            <a href="https://www.instagram.com/justfitok/"><img src="img/footer/instagram.svg" style="width: clamp(10px,5vw,40px);" class="m-2" alt="instagram"></a>
+                            <a href=""><img src="img/footer/wpp.svg" style="width: clamp(10px,5vw,40px);" class="m-2" alt="whatsapp"></a>
+                            <a href=""><img src="img/footer/mail.svg" style="width: clamp(10px,5vw,40px);" class="m-2" alt="mail"></a>
+                    </div>
                 </div>
             </div>
-            <div class="container-fluid bg-energia-color">
+            <div class="container-fluid bg-blanco-color">
                 <div class="container">
                     <div class="row py-3">
                         <div class="col-4">
@@ -678,7 +699,7 @@
             <img src="img/iconosFlotantes/subir.svg" alt="flecha" style="width: 60px;">
         </a>
     </button>
-    <button class="btn position-fixed top-50 end-0 translate-middle-y me-5">
+    <button class="btn position-fixed top-50 end-0 translate-middle-y me-5 d-none">
         <a class="text-decoration-none text-fuerza-color" href="https://web.whatsapp.com/">
             <img src="img/iconosFlotantes/wpp.svg" style="width: 60px;" alt="wpp">
         </a>

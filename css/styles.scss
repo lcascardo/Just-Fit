@@ -10,14 +10,14 @@ $font-family-sans-serif: 'Poppins', sans-serif;
 $font-size-base: 14px;
 
 //FONT SIZE
-$h1-font-size:                "70px";
-$h2-font-size:                "40px";
-$h3-font-size:                "36px";
-$h4-font-size:                "32px";
-$h5-font-size:                "26px";
-$h6-font-size:                "24px";
-$h7-font-size:                "20px";
-$h8-font-size:                $font-size-base;
+$h1-font-size: "70px";
+$h2-font-size: "40px";
+$h3-font-size: "36px";
+$h4-font-size: "32px";
+$h5-font-size: "26px";
+$h6-font-size: "24px";
+$h7-font-size: "20px";
+$h8-font-size: $font-size-base;
 
 $font-sizes: (
   1: $h1-font-size,
@@ -30,31 +30,40 @@ $font-sizes: (
   8: $h8-font-size,
 );
 
-//FONT WEIGHT CUSTOM
-$font-weight-lighter:         lighter;
-$font-weight-light:           300;
-$font-weight-normal:          400;
-$font-weight-semibold:        500;
-$font-weight-bold:            600;
-$font-weight-bolder:          700;
 
+//FONT WEIGHT CUSTOM
+$font-weight-lighter: lighter;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-semibold: 500;
+$font-weight-bold: 600;
+$font-weight-bolder: 700;
+
+//COLORES PRIMARY Y SECONDARY
+$primary: #FFD81A;
+
+$theme-colors: (
+  "primary": $primary,
+);
 
 // COLORES CUSTOM
 $custom-colors: (
-    //FUERZA
-    "fuerza-color": #333333,
-    //ENERGIA
-    "energia-color": #FFD81A,
-    //BLANCO
-    "blanco-color": #FFFFFF,
-    //GRIS 1
-    "gris1-color": #D6D6D6,
-    //GRIS 2
-    "gris2-color": #979797,
-    //GRIS 3
-    "gris3-color": #4D4D4D,
-    //SECUNDARIO
-    "secundario-color": #F0EB2D,
+  //FUERZA
+  "fuerza-color": #333333,
+  //ENERGIA
+  "energia-color": #FFD81A,
+  //BLANCO
+  "blanco-color": #FFFFFF,
+  //GRIS 1
+  "gris1-color": #D6D6D6,
+  //GRIS 2
+  "gris2-color": #979797,
+  //GRIS 3
+  "gris3-color": #4D4D4D,
+  //VIOLETA
+  "violeta-color": #751B9F,
+  //SECUNDARIO
+  "secundario-color": #F0EB2D,
 );
 
 
@@ -62,12 +71,18 @@ $custom-colors: (
 // AGREGAR COLORES CUSTOM
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
 //CLASES
 
 .acordeonBoton {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
 }
 
+.boton-hover:hover {
+  background-color: #979797;
+  border: none;
+  transition-duration: 0.5s;
+}
 
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
