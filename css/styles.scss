@@ -86,3 +86,8 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   transition-duration: 0.5s;
 }
 
+.evento-nav {
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+}
+
