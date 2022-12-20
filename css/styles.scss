@@ -91,3 +91,57 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   border-bottom-style: solid;
 }
 
+.subirCirculo {
+  stroke:#751B9F;
+}
+
+.subirFlecha {
+  fill:#333333;
+}
+
+.subir-icono:hover {
+  .subirCirculo {
+    fill: #FFFFFF;
+  }
+  .subirFlecha {
+    fill: #751B9F;
+  }
+}
+
+.dolarCirculo {
+  fill:url(#paint0_linear_718_2018);
+}
+
+.dolar-icono:hover {
+  .dolarCirculo {
+    fill: #4D4D4D;
+    ;
+    stroke: #FFFFFF;
+    stroke-width: 3;
+  }
+}
+
+.tarjeta {
+  .tarjetaImagenHover {
+    display: none;
+  }
+  .tarjetaDatos {
+    display: none;
+  }
+}
+
+.tarjeta:hover {
+  .tarjetaDatos {
+    display: block;
+  }
+  .tarjetaImagen {
+    display: none;
+  }
+  .tarjetaImagenHover {
+    display: block;
+  }
+  .tarjetaNumero {
+    display: none;
+  }
+
+}

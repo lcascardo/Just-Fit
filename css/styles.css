@@ -11007,4 +11007,49 @@ textarea.form-control-lg {
 .evento-nav {
   border-bottom-width: 4px;
   border-bottom-style: solid;
+}
+
+.subirCirculo {
+  stroke: #751B9F;
+}
+
+.subirFlecha {
+  fill: #333333;
+}
+
+.subir-icono:hover .subirCirculo {
+  fill: #FFFFFF;
+}
+.subir-icono:hover .subirFlecha {
+  fill: #751B9F;
+}
+
+.dolarCirculo {
+  fill: url(#paint0_linear_718_2018);
+}
+
+.dolar-icono:hover .dolarCirculo {
+  fill: #4D4D4D;
+  stroke: #FFFFFF;
+  stroke-width: 3;
+}
+
+.tarjeta .tarjetaImagenHover {
+  display: none;
+}
+.tarjeta .tarjetaDatos {
+  display: none;
+}
+
+.tarjeta:hover .tarjetaDatos {
+  display: block;
+}
+.tarjeta:hover .tarjetaImagen {
+  display: none;
+}
+.tarjeta:hover .tarjetaImagenHover {
+  display: block;
+}
+.tarjeta:hover .tarjetaNumero {
+  display: none;
 }/*# sourceMappingURL=styles.css.map */
